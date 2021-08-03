@@ -247,6 +247,7 @@ img {
 }
 
 .feature-img-1 {
+  fill: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
