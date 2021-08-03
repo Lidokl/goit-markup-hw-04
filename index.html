@@ -44,15 +44,18 @@
           <li class="info-list-item">
             
             <a href="mailto:info@example.com" class="info-link"
-              >info@devstudio.com</a
+              >
+              <svg class="info-icon" width="16px" height="12px">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a
             >
           </li>
           <li class="info-list-item">
-            <a href="tel:+380991111111" class="info-link">+38 096 111 11 11
-              <svg>
-                <use hre ></use>
-              </svg>
-            </a>
+            
+            <a href="tel:+380991111111" class="info-link"><svg class="info-icon" width="10px" height="16px">
+              <use href="./images/symbol-defs.svg#icon-tel"></use>
+            </svg>+38 096 111 11 11
+              </a>
           </li>
         </ul>
       </div>
@@ -74,9 +77,9 @@
         <div class="container">
           <ul class="feature-list">
             <li class="feature-list-item">
-              <svg>
-                <use href="./"></use>
-              </svg>
+             <div class="feature-img"> <svg>
+                <use class="feature-img-1" href="./images/symbol-defs.svg#icon-Vector" width="70px" height="70px"></use>
+              </svg></div>
               <h2 class="feature-item-title">Внимание к деталям</h2>
               <p class="feature-item-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -85,6 +88,9 @@
             </li>
 
             <li class="feature-list-item">
+              <div class="feature-img"> <svg>
+                <use class="feature-img-1" href="./images/symbol-defs.svg#icon-Vector-1" width="70px" height="70px"></use>
+              </svg></div>
               <h2 class="feature-item-title">Пунктуальность</h2>
               <p class="feature-item-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -93,6 +99,9 @@
             </li>
 
             <li class="feature-list-item">
+              <div class="feature-img"> <svg>
+                <use class="feature-img-1" href="./images/symbol-defs.svg#icon-Vector-2" width="70px" height="70px"></use>
+              </svg></div>
               <h2 class="feature-item-title">Планирование</h2>
               <p class="feature-item-text">
                 Равным образом консультация с широким активом в значительной
@@ -101,6 +110,9 @@
             </li>
 
             <li class="feature-list-item">
+              <div class="feature-img"> <svg>
+                <use class="feature-img-1" href="./images/symbol-defs.svg#icon-astronaut" width="70px" height="70px"></use>
+              </svg></div>
               <h2 class="feature-item-title">Современные технологии</h2>
               <p class="feature-item-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -156,7 +168,23 @@
                 <div class="team-content">
                   <h3 class="team-name">Игорь Демьяненко</h3>
                   <p class="team-text">Product Designer</p>
-                </div>
+                  <ul class="social-link">
+                    <li class="social-team-item">
+               <a class="social-team-link" href="#">
+                    <svg class="social-team" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                    
+                    <li class="social-team-item">
+               <a class="social-team-link" href="#">
+                 <svg class="social-team" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                   <li class="social-team-item">
+               <a class="social-team-link" href="#">                 
+                 <svg class="social-team" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                    <li class="social-team-item">
+               <a class="social-team-link" href="#"> 
+                   <svg class="social-team" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+                   
+                  </ul>
+                </div> 
               </div>
             </li>
 
@@ -170,6 +198,7 @@
                 <div class="team-content">
                   <h3 class="team-name">Ольга Репина</h3>
                   <p class="team-text">Frontend Developer</p>
+                  
                 </div>
               </div>
             </li>
@@ -207,15 +236,16 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a href="#" class="logo" lang="en"
-          ><span class="logo-web">Web</span
-          ><span class="logo-footer">Studio</span></a
-        >
-        <address class="address">
-          <ul class="footer-address-list">
-            <li>
-              <a
+      <div class="container footer-container">
+        <div>
+          <a href="#" class="logo" lang="en"
+            ><span class="logo-web">Web</span
+            ><span class="logo-footer">Studio</span></a
+            >
+             <address class="address">
+              <ul class="footer-address-list">
+                 <li>
+                   <a
                 class="footer-address"
                 href="https://www.google.com.ua/maps/?q=50.42672,30.53834"
               >
@@ -234,8 +264,35 @@
             </li>
           </ul>
         </address>
+       </div>
+
+        <div class="join-container">
+         <div class="container-footer-svg">
+          <h3 class="footer-title">Присоединяйтесь</h3>
+          <ul class="social-footer-list"> 
+             <li class="social-footer-item">
+               <a class="social-footer-link" href="#">
+                    <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                    
+                    <li class="social-footer-item">
+               <a class="social-footer-link" href="#">
+                 <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                   
+                 <li class="social-footer-item">
+               <a class="social-footer-link" href="#">                 
+                 <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                   
+                <li class="social-footer-item">
+               <a class="social-footer-link" href="#"> 
+                   <svg class="social-footer" width="20px" height="20px"><use href="images\symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+                
+          </ul>
+          </div>
+        </div>
       </div>
+      
     </footer>
   </body>
 </html>
 
+  
