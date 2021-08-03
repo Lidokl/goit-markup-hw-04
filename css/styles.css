@@ -93,6 +93,8 @@ img {
 }
 .info-list {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list-item:not(:last-child),
@@ -106,6 +108,7 @@ img {
 
 .info-link {
   color: var(--title-color);
+  align-items: center;
 }
 .nav-link,
 .info-link {
@@ -122,6 +125,12 @@ img {
 .info-list :focus {
   color: var(--accent-color);
   text-decoration: none;
+}
+
+.info-icon {
+  margin-right: 10px;
+  text-decoration: none;
+  fill: currentColor;
 }
 
 /* герой */
@@ -215,6 +224,20 @@ img {
   width: 270px;
 }
 
+.feature-img {
+  width: 270px;
+  height: 120px;
+  background: var(--bgc-button);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.feature-img-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*наша команда */
 
 .team-info {
@@ -262,6 +285,49 @@ img {
   letter-spacing: 0.03em;
 }
 
+.social-link {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-team-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.social-team {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-team-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-team-link:hover,
+:focus {
+  background-color: var(--accent-color);
+}
+.social-team-link,
+.social-team:hover,
+:focus {
+  fill: #f5f4fa;
+}
+
 /* Футер  */
 
 .footer {
@@ -289,6 +355,72 @@ img {
   color: var(--secondary);
   text-decoration: none;
   font-style: normal;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-container {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.container-flexing {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.social-footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-footer-item {
+  width: 44px;
+  height: 44px;
+}
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.social-footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-footer-link:hover,
+:focus {
+  background-color: var(--accent-color);
+}
+.social-footer-link,
+.social-footer:hover,
+:focus {
+  fill: #f5f4fa;
+}
+.container-footer {
+  margin-right: 70px;
 }
 
 /* Портфолио */
