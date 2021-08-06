@@ -1,8 +1,7 @@
 :root {
   --primary-text-color: #212121;
   --primary-bgc: #ffffff;
-  --secondary: rgba(255, 255, 255, 0.6);
-  --button-bgc: #ffffff;
+  --button-bgc: #afb1b8;
   --title-color: #757575;
   --title-black: #2f303a;
   --accent-color: #2196f3;
@@ -10,6 +9,7 @@
   --title-text-color: #000000;
   --border: #eeeeee;
   --border-header: #ececec;
+  --hero-bgc: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -137,14 +137,13 @@ img {
   text-align: center;
   height: 600px;
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--hero-bgc),
+      var(--hero-bgc)
     ),
     url(../images/imghero.jpg);
 }
@@ -242,7 +241,7 @@ img {
 }
 
 .feature-img-1 {
-  fill: #212121;
+  fill: var(--primary-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,9 +302,7 @@ img {
   list-style: none;
 }
 
-.social-team-item {
-  
-}
+
 
 .social-team-link {
   display: flex;
@@ -314,12 +311,12 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--primary-bgc);
 }
 
 .social-team {
  
-  fill: #afb1b8;
+  fill: var(--button-bgc);
 }
 
 .social-team-item:not(:last-child) {
@@ -328,10 +325,11 @@ img {
 .social-team-link :hover,
 .social-team-item :hover {
   background-color: var(--accent-color);
+  fill: var(--bgc-button);
+   
 }
-.social-team-link :hover,
-.social-team :hover {
-  fill: #f5f4fa;
+.social-team-link:hover .social-team  {
+  fill: var(--bgc-button);
 }
 /* Постоянные клиенты */
 
@@ -353,7 +351,7 @@ img {
   padding: 16px 32px;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--button-bgc);
   justify-content: center;
   align-items: center;
 }
@@ -364,11 +362,12 @@ img {
   fill: currentColor;
   color: #afb1b8;
 }
-.client-link:hover {
-   border: 1px solid #2196f3;
+.client-link:hover .client-icon {
+   fill: var(--accent-color);
+   
 }
-.client-icon:hover {
-  fill: #2196f3;
+.client-link:hover{
+  border: 1px solid var(--accent-color);
 }
 /* Футер  */
 
@@ -394,7 +393,7 @@ img {
 
 .footer-address-navigate {
   margin-top: 9px;
-  color: var(--secondary);
+  color: var(--primary-bgc)60;
   text-decoration: none;
   font-style: normal;
 }
@@ -417,7 +416,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--primary-bgc);
 }
 
 .container-flexing {
@@ -428,7 +427,7 @@ img {
 .social-footer {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: var(--primary-bgc);
 }
 .social-footer-list {
   display: flex;
@@ -446,7 +445,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--primary-bgc)10;
 }
 .social-footer-item:not(:last-child) {
   margin-right: 10px;
@@ -456,7 +455,7 @@ img {
 }
 .social-footer-link,
 .social-footer:hover {
-  fill: #f5f4fa;
+  fill: var(--bgc-button);
 }
 .container-footer {
   margin-right: 70px;
@@ -501,16 +500,18 @@ img {
 }
 
 .portfolio.list {
-  padding-top: 50px;
+  margin-top: 50px;
 
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
 }
+.portfolio-link {
+  display: block;
+}
 
 
-
-.portfolio-item-a :hover {
+.portfolio-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
