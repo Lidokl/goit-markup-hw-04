@@ -10,6 +10,7 @@
   --border: #eeeeee;
   --border-header: #ececec;
   --hero-bgc: rgba(47, 48, 58, 0.4);
+  --white-grau:rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -117,8 +118,8 @@ img {
   color: var(--accent-color);
 }
 
-.info-list :hover,
-.info-list :focus {
+.info-link :hover,
+.info-link :focus {
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -331,6 +332,7 @@ img {
 .social-team-link:hover .social-team  {
   fill: var(--bgc-button);
 }
+
 /* Постоянные клиенты */
 
 .client.list {
@@ -366,6 +368,7 @@ img {
    fill: var(--accent-color);
    
 }
+
 .client-link:hover{
   border: 1px solid var(--accent-color);
 }
@@ -393,7 +396,9 @@ img {
 
 .footer-address-navigate {
   margin-top: 9px;
-  color: var(--primary-bgc)60;
+  font-size: 14px;
+ letter-spacing: 0.03em;
+  color: var( --white-grau);
   text-decoration: none;
   font-style: normal;
 }
@@ -453,10 +458,7 @@ img {
 .social-footer-link:hover {
   background-color: var(--accent-color);
 }
-.social-footer-link,
-.social-footer:hover {
-  fill: var(--bgc-button);
-}
+
 .container-footer {
   margin-right: 70px;
 }
