@@ -118,8 +118,8 @@ img {
   color: var(--accent-color);
 }
 
-.info-link :hover,
-.info-link :focus {
+.info-list :hover,
+.info-list :focus {
   color: var(--accent-color);
   text-decoration: none;
 }
